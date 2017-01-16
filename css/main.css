@@ -1,40 +1,46 @@
-header {
-	background-color: lightgray;
-	height: 60px;
-	position: fixed;
-}
-
-nav {
-	position: relative;
-}
-
-header ul {
-	list-style: none;
-	position: absolute;
-	right: 10px;
-}
-
-header ul li {
-	display: inline-block;
-	font-size: 20px;
-}
-
 body{
 	margin: 0;
 }
 
-#results {
+header {
+	position: fixed;
+	top:0;left:0;right:0;
+	background-color: lightgray;
+}
+header h1, header nav, nav ul, nav ul li {
+	display: inline-block;
+}
+nav {
+	position: absolute;
+	right: 10px;
+}
+
+nav ul {
+	margin:0;
+	padding: 0;
 	list-style: none;
 }
 
-.title {
+nav ul li {
+	font-size: 20px;
+}
+
+main {
+	margin-top: 100px;
+}
+
+.results {
+	list-style: none;
+}
+
+.result-title {
 	font-weight: bold;
 	font-size: 20px;
 	margin-left: 10px;
 	margin-right: 10px;
 }
 
-.date, .location {
+.result-date, .result-location {
 	color: gray;
 	font-size: 20px;
 }
