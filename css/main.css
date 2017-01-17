@@ -51,33 +51,42 @@ main {
 .search-input {
 	display:inline-block;
 	padding-top: 0px;
+	padding-left: 10px;
 	font-size: 16px;
 	height: 30px;
 	width: 400px;
+	border: 1px solid lightgray;
 	border-radius: 3px;
 }
 
 .search-logo {
-	display:inline-block;
+	display: inline-block;
+	padding-bottom: 1px;
 	border: 1px solid lightgray;
 	border-radius: 3px;
-	width: 30px;
+	height: 30px;
 	vertical-align: bottom;
 }
 
 .search-nav {
-	padding-top: 30px;
-	padding-bottom: 30px;
+	display: inline-block;
+	margin-top: 30px;
+	margin-bottom: 30px;
 	font-size: 0px;
+	border: 1px solid lightgray;
+	border-radius: 5px;
 }
 
 .search-nav-button, .search-nav-position {
 	display: inline-block;
 	margin: 0px;
-	border: 1px solid lightgray;
-	border-radius: 5px;
 	padding: 10px;
 	font-size: 16px;
+}
+
+.search-nav-position {
+	border-left: 1px solid lightgray;
+	border-right: 1px solid lightgray;
 }
 
 .results {
