@@ -1,3 +1,7 @@
+* {
+	font-family: 'Roboto', sans-serif;
+}
+
 body{
 	margin: 0;
 }
@@ -7,8 +11,10 @@ header {
 	top:0;left:0;right:0;
 	background-color: lightgray;
 }
+
 header h1, header nav, nav ul, nav ul li {
 	display: inline-block;
+	font-size: 18px;
 }
 nav {
 	position: absolute;
@@ -21,10 +27,6 @@ nav ul {
 	list-style: none;
 }
 
-nav ul li {
-	font-size: 20px;
-}
-
 main {
 	margin-top: 100px;
 	margin-left: 75px;
@@ -33,11 +35,21 @@ main {
 .search-logo {
 	width: 30px;
 	border: 1px solid lightgray;
-	border-radius: 5%;
+	border-radius: 3px;
 }
 
 .search-nav {
 	padding-top: 20px;
+	font-size: 0px;
+}
+
+.search-nav-button, .search-nav-position {
+	display: inline-block;
+	margin: 0px;
+	border: 1px solid lightgray;
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 16px;
 }
 
 .results {
