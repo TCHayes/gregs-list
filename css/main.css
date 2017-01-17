@@ -2,6 +2,10 @@
 	font-family: 'Roboto', sans-serif;
 }
 
+a {
+	text-decoration: none;
+}
+
 body{
 	margin: 0;
 }
@@ -16,9 +20,15 @@ header h1, header nav, nav ul, nav ul li {
 	display: inline-block;
 	font-size: 18px;
 }
+
+header h1 {
+	padding-left: 10px;
+}
+
 nav {
 	position: absolute;
 	right: 10px;
+	top: 10px;
 }
 
 nav ul {
@@ -27,19 +37,37 @@ nav ul {
 	list-style: none;
 }
 
+nav li {
+	padding-left: 6px;
+	padding-right: 6px;
+	color: purple;
+}
+
 main {
 	margin-top: 100px;
 	margin-left: 75px;
 }
 
-.search-logo {
-	width: 30px;
-	border: 1px solid lightgray;
+.search-input {
+	display:inline-block;
+	padding-top: 0px;
+	font-size: 16px;
+	height: 30px;
+	width: 400px;
 	border-radius: 3px;
 }
 
+.search-logo {
+	display:inline-block;
+	border: 1px solid lightgray;
+	border-radius: 3px;
+	width: 30px;
+	vertical-align: bottom;
+}
+
 .search-nav {
-	padding-top: 20px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 	font-size: 0px;
 }
 
@@ -55,16 +83,22 @@ main {
 .results {
 	list-style: none;
 	padding: 0;
+	margin: 0px;
+}
+
+.result {
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 .result-title {
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 17px;
 	margin-left: 10px;
 	margin-right: 10px;
 }
 
 .result-date, .result-location {
 	color: gray;
-	font-size: 20px;
+	font-size: 17px;
 }
